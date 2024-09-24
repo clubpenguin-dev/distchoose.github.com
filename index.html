@@ -1,9 +1,37 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distchoose</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Distchoose</h1>
+    </header>
+
+    <main>
+        <form id="quizForm">
+            <label for="experience">What's your skill level?</label>
+            <select id="experience">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <!-- Add more questions as needed -->
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result"></div> <!-- This will show the recommended distro -->
+    </main>
+
+    <footer>
+        <p>Made by clubpenguin-dev</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to the JS file -->
+</body>
 </html>
